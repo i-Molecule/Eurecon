@@ -73,7 +73,7 @@ class Parser:
             # points_coords = (points_coords * scale).numpy()
             ###
             object_length = len(np.transpose(points_coords))
-            return data_object, points_coords, object_length, file_name
+        return data_object, points_coords, object_length, file_name
 
 
     def parse_base_conformation(self, input_directory, weights_file_path=None):
