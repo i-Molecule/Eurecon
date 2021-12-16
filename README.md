@@ -49,5 +49,6 @@ Morozov A., Davide Z., Popov P., "Equidistant and Uniform Data Augmentation for 
 
 ## References:
 [1] Popov, Petr, and Sergei Grudinin. "Rapid determination of RMSDs corresponding to macromolecular rigid body motions." (2014): 950-956.
+
 [2] Popov, Petr, and Sergei Grudinin. "Eurecon: equidistant uniform rigid-body ensemble constructor." Journal of Molecular Graphics and Modelling 80 (2018): 313-319.
 
