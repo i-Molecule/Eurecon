@@ -1,8 +1,10 @@
 # Eurecon
 
+Authors: Alexander Morozov, Davide Zgyatti, and Petr Popov, iMolecule, Skoltech.
+
 Equidistant and Uniform Data Augmentation for 3D Objects.
 
-Python library for 3D data augmentation, based on Eurecon algorithm. 
+Python library for 3D data augmentation, based on Eurecon algorithm ([1,2]). 
 
 - The library works with a variety of 3D file formats, including point cloud formats (.XYZ, .PTS, .PCD) and polygon mesh formats (.STL, .OFF, .OBJ, .PLY, .GLTF).
 - Eurecon is computationally efficient, taking ~0.1 seconds to generate 1,000 samples  of an object of 1,000 3D points. 
@@ -41,3 +43,11 @@ Detailed instructions on how to run Eurecon to reproduce an augmented ModelNet40
 ## Example:
 
 python eurecon.py -r 0.5 -p 1 -a resources/tesselation_vertices_layer_0.txt -i examples/test.off -o examples/test_output
+
+## How to cite Eurecon:
+Morozov A., Davide Z., Popov P., "Equidistant and Uniform Data Augmentation for 3D Objects", IEEE Access, 2022.
+
+## References:
+[1] Popov, Petr, and Sergei Grudinin. "Rapid determination of RMSDs corresponding to macromolecular rigid body motions." (2014): 950-956.
+[2] Popov, Petr, and Sergei Grudinin. "Eurecon: equidistant uniform rigid-body ensemble constructor." Journal of Molecular Graphics and Modelling 80 (2018): 313-319.
+
