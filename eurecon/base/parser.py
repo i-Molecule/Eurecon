@@ -64,7 +64,7 @@ class Parser:
             object_length = len(points_coords[0])
 
 
-        if file_name.endswith(Parser.TRIANGLE_MESH):
+        elif file_name.endswith(Parser.TRIANGLE_MESH):
             data_object = o3d.io.read_triangle_mesh(file_name)
             points_coords = np.transpose(np.asarray(data_object.vertices))
             ### Scaling applied
@@ -73,6 +73,10 @@ class Parser:
             # points_coords = (points_coords * scale).numpy()
             ###
             object_length = len(np.transpose(points_coords))
+
+        else:
+            raise ValueError(f'File format {file_name} is not supported.\n Supported file formats: {Parser.POINT_CLOUD}, {Parser.TRIANGLE_MESH}')
+        
         return data_object, points_coords, object_length, file_name
 
 
